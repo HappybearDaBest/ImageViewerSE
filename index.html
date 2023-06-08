@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Viewer</title>
+    <style>
+        body {
+            background-color: #e1e8f0;
+            font-family: "Mystery Quest", cursive;
+        }
+
+        #image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+        }
+
+        #button-container {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        button {
+            margin: 10px;
+            font-family: "Mystery Quest", cursive;
+            background-color: #1e4ba8;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #153a7c;
+        }
+
+        #toggle-size-btn {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="image-container"></div>
+    <div id="button-container">
+        <button id="open-btn">Open Image</button>
+        <button id="prev-btn">Previous</button>
+        <button id="next-btn">Next</button>
+        <button id="toggle-size-btn">Toggle Size</button>
+    </div>
+
+    <input type="file" id="file-input" accept="image/*" multiple style="display: none;">
+
+    <script src="script.js"></script>
+</body>
+</html>
